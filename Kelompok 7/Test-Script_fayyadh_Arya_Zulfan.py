@@ -12,13 +12,13 @@ driver.find_element(by="id", value="placeholderText").send_keys("Anda Siapa?")
 # mengganti myTextarea menjadi "Bukan warna Biru?"
 driver.find_element(by="id", value="myTextarea").send_keys("Bukan warna Biru")
 
-# mengganti myButton menjadi clicked dr not clicked
+# mengganti myButton menjadi clicked dari not clicked
 driver.find_element(by="id", value="myButton").click()
 
-# mengganti chcekBox1 menjadi clicked dr not clicked
+# mengganti chcekBox1 menjadi clicked dari not clicked
 driver.find_element(by="id", value="checkBox1").click()
 
-#mengganti value dari slider dr 25% ke 75%
+#mengganti value dari dropdown dari 25% ke 75%
 def dropdown():
     dropdown = driver.find_element(by="id", value="mySelect")
     select = Select(dropdown)
